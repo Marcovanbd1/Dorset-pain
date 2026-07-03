@@ -3,11 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Living with Pain | Weymouth & Portland</title>
+<title>Living with Pain | Dorset</title>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-<!-- Plausible Analytics -->
-<script defer data-domain="weymouthandportlandpcn.co.uk" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -28,18 +25,6 @@ nav{position:sticky;top:0;z-index:200;background:rgba(250,249,247,0.95);backdrop
 .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
 .nav-links a{font-size:13px;color:var(--stone);text-decoration:none;font-weight:400;transition:color 0.2s;letter-spacing:0.02em}
 .nav-links a:hover{color:var(--sage)}
-.nav-back{
-  color:var(--white) !important;
-  font-weight:500 !important;
-  background:var(--sage);
-  padding:0.45rem 1rem !important;
-  border-radius:100px;
-  font-size:12px !important;
-  letter-spacing:0.03em;
-  transition:background 0.2s, transform 0.2s !important;
-  margin-left:0.5rem;
-}
-.nav-back:hover{background:#3d6b5f !important;transform:translateY(-1px);color:var(--white) !important}
 
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;border-radius:6px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--ink-mid);border-radius:2px;transition:all 0.25s}
@@ -53,7 +38,6 @@ nav{position:sticky;top:0;z-index:200;background:rgba(250,249,247,0.95);backdrop
 .mobile-menu li a{display:block;padding:0.75rem 0;font-size:15px;color:var(--ink-mid);text-decoration:none;font-weight:400;border-bottom:1px solid var(--border);transition:color 0.2s}
 .mobile-menu li:last-child a{border-bottom:none}
 .mobile-menu li a:hover{color:var(--sage)}
-.mobile-menu .mobile-back{color:var(--sage) !important;font-weight:500 !important}
 
 .hero{min-height:88vh;display:flex;align-items:center;padding:5rem 2rem 4rem;background:linear-gradient(160deg,var(--sage-light) 0%,var(--paper) 60%);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-120px;right:-120px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,var(--warm-light) 0%,transparent 70%);opacity:0.6}
@@ -70,13 +54,6 @@ nav{position:sticky;top:0;z-index:200;background:rgba(250,249,247,0.95);backdrop
 .btn-primary:hover{background:#3d6b5f;transform:translateY(-1px)}
 .btn-ghost{border:1.5px solid var(--border);color:var(--ink-mid);padding:0.85rem 1.75rem;border-radius:100px;font-size:15px;font-weight:400;text-decoration:none;transition:all 0.2s;font-family:'DM Sans',sans-serif;display:inline-block}
 .btn-ghost:hover{border-color:var(--sage);color:var(--sage)}
-
-/* Back to PCN bar below hero */
-.back-bar{background:var(--white);border-bottom:1px solid var(--border);padding:0.75rem 2rem;display:flex;align-items:center}
-.back-bar-inner{max-width:860px;margin:0 auto;width:100%}
-.back-bar a{font-size:13px;color:var(--stone);text-decoration:none;font-weight:400;display:inline-flex;align-items:center;gap:6px;transition:color 0.2s}
-.back-bar a:hover{color:var(--sage)}
-.back-bar a svg{width:14px;height:14px;flex-shrink:0;opacity:0.6}
 
 .truth-strip{background:var(--sage);color:white;padding:2rem;text-align:center}
 .truth-strip p{font-family:'Lora',serif;font-size:clamp(1.05rem,2.5vw,1.35rem);font-weight:400;font-style:italic;opacity:0.95;max-width:640px;margin:0 auto}
@@ -160,25 +137,12 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:3rem 2rem;font-
 .footer-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
 .footer-brand{font-family:'Lora',serif;font-size:1rem;color:rgba(255,255,255,0.85);margin-bottom:0.5rem;font-style:italic}
 .footer-collab{font-size:0.8rem;line-height:1.7;color:rgba(255,255,255,0.45)}
+.footer-powered{font-size:0.78rem;color:rgba(255,255,255,0.35);margin-top:1.25rem;line-height:1.6}
+.footer-powered a{color:rgba(255,255,255,0.5);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.2);transition:color 0.2s}
+.footer-powered a:hover{color:var(--sage-mid)}
 .footer-links{list-style:none;display:flex;flex-direction:column;gap:0.5rem;text-align:right}
 .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.82rem;transition:color 0.2s}
 .footer-links a:hover{color:var(--sage-mid)}
-.footer-back{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  background:var(--sage);
-  color:white !important;
-  font-size:0.85rem !important;
-  font-weight:500;
-  padding:0.65rem 1.25rem;
-  border-radius:100px;
-  text-decoration:none;
-  margin-top:1.5rem;
-  transition:background 0.2s, transform 0.2s;
-}
-.footer-back:hover{background:#3d6b5f !important;transform:translateY(-1px)}
-.footer-back svg{width:14px;height:14px;flex-shrink:0}
 
 @media(max-width:700px){
   nav{padding:0 1.25rem}
@@ -187,7 +151,6 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:3rem 2rem;font-
   .mobile-menu{display:block}
   .hero{padding:4rem 1.25rem 3rem;min-height:auto}
   section{padding:3.5rem 1.25rem}
-  .back-bar{padding:0.65rem 1.25rem}
   .journey-steps{grid-template-columns:1fr}
   .journey-step{border-right:none;border-bottom:1px solid var(--border);padding:1.75rem 1.25rem}
   .journey-step:last-child{border-bottom:none}
@@ -208,7 +171,6 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:3rem 2rem;font-
     <li><a href="#relate">Relate differently</a></li>
     <li><a href="#live">Live well</a></li>
     <li><a href="#support">Local support</a></li>
-    <li><a href="https://weymouthandportlandpcn.co.uk" class="nav-back">&#8592; PCN Home</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -221,13 +183,12 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:3rem 2rem;font-
     <li><a href="#relate" class="menu-link">Relate to it differently</a></li>
     <li><a href="#live" class="menu-link">Live well alongside it</a></li>
     <li><a href="#support" class="menu-link">Local support</a></li>
-    <li><a href="https://weymouthandportlandpcn.co.uk" class="mobile-back">&#8592; Back to PCN Home</a></li>
   </ul>
 </div>
 
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-eyebrow">Weymouth &amp; Portland &middot; Dorset Pain Management Service</p>
+    <p class="hero-eyebrow">Dorset &middot; For people living with ongoing pain</p>
     <h1>Pain is real.<br><em>And there is more<br>you can do.</em></h1>
     <div class="hero-lead">
       <p>Living with ongoing pain is exhausting. It can affect your body, your mood, your sleep, and your sense of who you are. This page won&rsquo;t pretend otherwise.</p>
@@ -240,15 +201,6 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:3rem 2rem;font-
     </div>
   </div>
 </section>
-
-<div class="back-bar">
-  <div class="back-bar-inner">
-    <a href="https://weymouthandportlandpcn.co.uk">
-      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Back to Weymouth &amp; Portland PCN
-    </a>
-  </div>
-</div>
 
 <div class="truth-strip">
   <p>&ldquo;Pain is not an accurate measure of tissue damage. It is a signal &mdash; and signals can be turned down.&rdquo;</p>
@@ -419,7 +371,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:3rem 2rem;font-
 
 <section id="support" class="local-section">
   <div class="section-inner">
-    <p class="section-label">In Weymouth &amp; Portland</p>
+    <p class="section-label">In Dorset</p>
     <h2 class="section-title">You are not alone</h2>
     <p class="section-intro">Many people across Dorset live with ongoing pain. These local services can help with the wider picture, confidence, mood, movement, and connection.</p>
     <div class="local-grid">
@@ -477,14 +429,12 @@ footer{background:var(--ink);color:rgba(255,255,255,0.6);padding:3rem 2rem;font-
     <div>
       <p class="footer-brand">Living with pain</p>
       <p class="footer-collab">
-        A resource for people in Weymouth &amp; Portland living with persistent pain.<br>
-        Developed by Weymouth &amp; Portland Primary Care Network in partnership with Dorset Pain Management Service and Dorset HealthCare.<br><br>
-        This page is a pilot. It can be adapted for use across Dorset.
+        A resource for people across Dorset living with persistent pain.<br>
+        Developed in partnership with Dorset Pain Management Service and Dorset HealthCare.
       </p>
-      <a href="https://weymouthandportlandpcn.co.uk" class="footer-back">
-        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        Back to Weymouth &amp; Portland PCN
-      </a>
+      <p class="footer-powered">
+        Powered by <a href="https://weymouthandportlandpcn.co.uk" target="_blank" rel="noopener">Weymouth &amp; Portland Primary Care Network</a>
+      </p>
     </div>
     <ul class="footer-links">
       <li><a href="https://dorsetpain.org.uk" target="_blank" rel="noopener">Dorset Pain Service</a></li>
